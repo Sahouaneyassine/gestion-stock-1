@@ -3,13 +3,13 @@ package orgsid.springmvc.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.*;
 
 import orgsid.springmvc.entities.*;
 import orgsid.springmvc.dao.ProduitRepository;
 
 @RestController
+@RequestMapping("/api")
 @CrossOrigin("*")
 public class ProduitService {
 	@Autowired
